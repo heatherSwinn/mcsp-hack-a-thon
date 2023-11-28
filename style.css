@@ -7,11 +7,20 @@ body {
 
 }
 
+#borderimg {
+    border: 40px solid transparent;
+    padding: 15px;
+    border-width: 40px;
+    border-image-width: 40px;
+    border-image: url(https://stories.starbucks.com/uploads/2023/10/Starbucks-Glitter-Red-Cold-Cup.png) 30 stretch;
+  }
+
 h1 {
     font-size: 30px;
     color:rgb(206, 206, 206);
     background-color: rgb(10, 48, 10);
     border: 2px;
+    text-align: center;
 }
 
 
@@ -24,6 +33,11 @@ h1 {
     width: 50dvw;
     text-align: left;
 }
+.buttons{
+    align-items: initial;
+}
+
+
 
 .buttons button {
     margin: 5px;
@@ -33,12 +47,12 @@ h1 {
     font-size: 14px;
     cursor: pointer;
     text-align: center;
-    justify-content: center;
+    justify-content:flex-start;
 }
 .buttons .drink-option {
     padding: 2%;
     text-align: right;
-
+    justify-content: flex-start;
 }
 
 canvas {
