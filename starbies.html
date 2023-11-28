@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote On Your Favorite Starbucks Drink!</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <div> 
+        <h1>What Is The Best Starbucks Drink?</h1>
+      </div>
+    <div class="container">
+        <div class="chart-container">
+            <canvas id ='voteChart' width="400" height="200"></canvas>
+        </div>
+        <div class="buttons">
+            <div class="drink-option">
+                <img src="https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_WhiteChocolateMocha.jpg?impolicy=1by1_wide_topcrop_630" width="200" height="200">
+                <button onclick="vote('White Chocolate Mocha')">Vote for White Chocolate Mocha</button>
+             </div>
+            <div class="drink-option">
+                <img src="https://www.tasteofhome.com/wp-content/uploads/2023/05/Pumpkin-Creme-Cold-Brew-via-stabucks.jpg?fit=700%2C700?fit=700,700" width="200" height="200">
+                <button onclick="vote('Pumpkin Creme Cold Brew')">Vote for Pumpkin Creme Cold Brew</button>
+            </div>
+            <div class="drink-option">
+                <img src="https://www.tasteofhome.com/wp-content/uploads/2023/05/Iced-Caramel-Macchiato-starbucks.jpg?fit=700%2C700?fit=700,700" width="200" height="200">
+                <button onclick="vote('Caramel Macchiato')">Vote for Caramel Macchiato</button>
+            </div>
+            <div class="drink-option">
+                <img src="https://www.tasteofhome.com/wp-content/uploads/2023/06/Pike-Place-Roast-starbucks-1.jpg?fit=700%2C700?fit=700,700" width="200" height="200">
+                <button onclick="vote('Pike Place Roast')">Vote for Pike Place Roast</button>
+            </div>
+            <div class="drink-option">
+                <img src="https://globalassets.starbucks.com/digitalassets/products/bev/SBX20211210_CaramelRibbonCrunchFrapp.jpg?impolicy=1by1_wide_topcrop_630" width="200" height="200">
+                <button onclick="vote('Caramel Ribbon Crunch Frappuccino')">Vote for Caramel Ribbon Crunch Frappuccino</button>
+            </div>
+            <div class="drink-option">
+                <img src="https://www.allrecipes.com/thmb/s-38D07w0DH_0y7PCfkSGC3ZuDc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Allrecipes-Starbucks-logo-4x3-2d7c0bb7d899440d925106440c0948b3.png" width="200" height="150">
+                <button onclick="vote('Other')">Vote for Other</button>
+            </div>
+        </div>
+    </div>
+    <script src="starbies.js"></script>
+    
+</body>
+</html>
